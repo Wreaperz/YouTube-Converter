@@ -1,5 +1,6 @@
 import os
 from pytubefix import YouTube # IMPORTANT - USES THE PYTUBEFIX FORK
+import sys
 
 def download_video(url, output_format, save_folder):
     # Check if the directory exists, if not, create it
