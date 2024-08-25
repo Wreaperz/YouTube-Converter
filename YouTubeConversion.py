@@ -30,7 +30,11 @@ def download_video(url, output_format, save_folder):
 
 def main():
     while True:
-        url = input("Enter the YouTube video URL: ")
+        url = input("Enter the YouTube video URL >> ")
+
+        # If the url request is empty, exit the program
+        if url == "":
+            sys.exit()
 
         output_format = ""
         while output_format not in ["mp3", "mp4"]:
@@ -38,8 +42,12 @@ def main():
 
         save_folder = input("Enter the folder where you want to save the file: ")
 
+        # Run the function to actually download and save the file
         download_video(url, output_format, save_folder)
+        
         print(f"Downloaded and converted to {output_format} in the '{save_folder}' directory.")
+        print()
+        print()
 
 if __name__ == "__main__":
     main()
