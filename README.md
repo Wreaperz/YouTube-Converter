@@ -7,6 +7,8 @@ The project is as simple as it sounds lol. Now, you can avoid all those fishy si
 The program will ask for a YouTube link (yes, you can just copy and paste), and then whether or not you want the output to be MP3 or MP4 (audio vs video).
 
 # Before You Run...
-This project uses the "yt-dlp" third-party package and requires that you install it.
+This project uses the "pytubefix" third-party package and requires that you install it.
 
-Just be sure to run "**pip install yt-dlp**" before attempting to run the program!
+Just be sure to run "**pip install pytubefix**" before attempting to run the program!
+
+(It's a fork of the pytube project, because the pytube repo has some bugs with it, currently, because of YT's latest update (as of Jul 2024))
